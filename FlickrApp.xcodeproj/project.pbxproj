@@ -16,6 +16,7 @@
 		8498D7F31DB7E78D00929692 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8498D7F11DB7E78D00929692 /* LaunchScreen.storyboard */; };
 		8498D7FE1DB7E78D00929692 /* FlickrAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8498D7FD1DB7E78D00929692 /* FlickrAppTests.m */; };
 		8498D8091DB7E78E00929692 /* FlickrAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8498D8081DB7E78E00929692 /* FlickrAppUITests.m */; };
+		8498D87B1DB828E700929692 /* FlickrFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8498D8761DB828D400929692 /* FlickrFramework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +33,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = 8498D7DC1DB7E78D00929692;
 			remoteInfo = FlickrApp;
+		};
+		8498D8751DB828D400929692 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8498D8701DB828D400929692 /* FlickrFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8498D8431DB81DF200929692;
+			remoteInfo = FlickrFramework;
+		};
+		8498D8771DB828D400929692 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8498D8701DB828D400929692 /* FlickrFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8498D84C1DB81DF200929692;
+			remoteInfo = FlickrFrameworkTests;
+		};
+		8498D8791DB828DE00929692 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8498D8701DB828D400929692 /* FlickrFramework.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8498D8421DB81DF200929692;
+			remoteInfo = FlickrFramework;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -53,6 +75,7 @@
 		8498D8041DB7E78E00929692 /* FlickrAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlickrAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8498D8081DB7E78E00929692 /* FlickrAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlickrAppUITests.m; sourceTree = "<group>"; };
 		8498D80A1DB7E78E00929692 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8498D8701DB828D400929692 /* FlickrFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FlickrFramework.xcodeproj; path = FlickrFramework/FlickrFramework.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8498D87B1DB828E700929692 /* FlickrFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +107,7 @@
 		8498D7D41DB7E78D00929692 = {
 			isa = PBXGroup;
 			children = (
+				8498D8701DB828D400929692 /* FlickrFramework.xcodeproj */,
 				8498D7DF1DB7E78D00929692 /* FlickrApp */,
 				8498D7FC1DB7E78D00929692 /* FlickrAppTests */,
 				8498D8071DB7E78E00929692 /* FlickrAppUITests */,
@@ -143,6 +168,15 @@
 			path = FlickrAppUITests;
 			sourceTree = "<group>";
 		};
+		8498D8711DB828D400929692 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8498D8761DB828D400929692 /* FlickrFramework.framework */,
+				8498D8781DB828D400929692 /* FlickrFrameworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -157,6 +191,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				8498D87A1DB828DE00929692 /* PBXTargetDependency */,
 			);
 			name = FlickrApp;
 			productName = FlickrApp;
@@ -235,6 +270,12 @@
 			mainGroup = 8498D7D41DB7E78D00929692;
 			productRefGroup = 8498D7DE1DB7E78D00929692 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8498D8711DB828D400929692 /* Products */;
+					ProjectRef = 8498D8701DB828D400929692 /* FlickrFramework.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8498D7DC1DB7E78D00929692 /* FlickrApp */,
@@ -243,6 +284,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		8498D8761DB828D400929692 /* FlickrFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FlickrFramework.framework;
+			remoteRef = 8498D8751DB828D400929692 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8498D8781DB828D400929692 /* FlickrFrameworkTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = FlickrFrameworkTests.xctest;
+			remoteRef = 8498D8771DB828D400929692 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8498D7DB1DB7E78D00929692 /* Resources */ = {
@@ -311,6 +369,11 @@
 			isa = PBXTargetDependency;
 			target = 8498D7DC1DB7E78D00929692 /* FlickrApp */;
 			targetProxy = 8498D8051DB7E78E00929692 /* PBXContainerItemProxy */;
+		};
+		8498D87A1DB828DE00929692 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FlickrFramework;
+			targetProxy = 8498D8791DB828DE00929692 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -509,6 +572,7 @@
 				8498D80F1DB7E78E00929692 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8498D8101DB7E78E00929692 /* Build configuration list for PBXNativeTarget "FlickrAppTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +581,7 @@
 				8498D8121DB7E78E00929692 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8498D8131DB7E78E00929692 /* Build configuration list for PBXNativeTarget "FlickrAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +590,7 @@
 				8498D8151DB7E78E00929692 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
